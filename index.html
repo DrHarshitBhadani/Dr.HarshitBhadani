@@ -4,33 +4,71 @@
 <head>
 	<Title>Dr. Bhadani's Dental Clinic</Title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<style>
-		#myBtn {
-			display: none;
-			position: fixed;
-			bottom: 40px;
-			right: 30px;
-			z-index: 99;
-			font-size: 18px;
-			border: none;
-			outline: none;
-			background-color: red;
+		img.map_image:hover {
+			content: url("./images/Map_Default_View.jpg");
+		}
+		.fa {
+			padding: 1px;
+			font-size: 30px;
+			width: 50px;
+			text-align: center;
+			text-decoration: none;
+			margin: 1px 1px;
+		}
+
+		.fa:hover {
+			opacity: 0.7;
+		}
+
+		.fa-facebook {
+			background: #3B5998;
 			color: white;
-			cursor: pointer;
-			padding: 5px;
-			border-radius: 2px;
+		}
+
+		.fa-twitter {
+			background: #55ACEE;
+			color: white;
+		}
+
+		.fa-google {
+			background: #dd4b39;
+			color: white;
+		}
+
+		.fa-linkedin {
+			background: #007bb5;
+			color: white;
+		}
+
+		.fa-youtube {
+			background: #bb0000;
+			color: white;
+		}
+
+		.fa-instagram {
+			background: #125688;
+			color: white;
+		}
+
+		#myBtn {
+			width: 0;
+			height: 0;
+			border-left: 25px solid transparent;
+			border-right: 25px solid transparent;
+			border-bottom: 50px solid red;
+			line-height: 70px;
 		}
 
 		#myBtn:hover {
+			width: 0;
+			height: 0;
+			border-left: 25px solid transparent;
+			border-right: 25px solid transparent;
 			background-color: #555;
-		}
-
-		.feedback {
-			background-color: #31B0D5;
-			color: white;
-			padding: 10px 20px;
-			border-radius: 2px;
-			border-color: #46b8da;
 		}
 
 		.book-button {
@@ -43,7 +81,7 @@
 
 		#floating_div {
 			position: fixed;
-			bottom: -4px;
+			bottom: 1px;
 			right: 10px;
 		}
 
@@ -131,6 +169,11 @@
 			background-color: #777;
 		}
 	</style>
+	<script>
+		function visit_google_form(){
+		window.open("https://forms.gle/t3aVWMjenEjzDgiD7")
+	   }
+	</script>
 </head>
 
 <body class="content">
@@ -149,8 +192,8 @@
 						<!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_hor_scroll-->
 						<tr>
 							<td class="contact_us_options">
-								Call: 7980860185/7030360370/9836115000 or Email: Dr.HarshitBhadani@gmail.com
-								<button class="book-button" style="float: right;">Book an appointment online</button>
+								Call: 7980860185 / 7890100200 / 9836115000 or Email: Dr.HarshitBhadani@gmail.com
+								<button class="book-button" style="float: right;" onclick="visit_google_form()">Book an appointment online</button>
 							</td>
 						</tr>
 						<tr>
@@ -190,9 +233,7 @@
 		</table>
 		<div id="about_the_clinic">
 			<h1>About the clinic</h1>
-			Located in Salt Lake sector-III, Kolkata. The clinic is well equipped with latest and sophisticated
-			equipment. Your health is our top-most priority. The premises is shared with some the the leading doctors in
-			the city.
+
 			<table>
 				<tr>
 					<td>
@@ -252,6 +293,20 @@
 					</td>
 				</tr>
 			</table>
+			<p></p>
+			<div>
+				Located in Salt Lake sector-III, Kolkata. The clinic is well equipped with latest and sophisticated
+				equipment. Your health is our top-most priority. The premises is shared with some the the leading
+				doctors in
+				the city.
+			</div>
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-google"></a>
+				<a href="#" class="fa fa-linkedin"></a>
+				<a href="#" class="fa fa-youtube"></a>
+				<a href="#" class="fa fa-instagram"></a>
+				<button class="book-button" style="float: right;" onclick="visit_google_form()">Book an appointment online</button>
 		</div>
 
 		<div id="about_the_doctor">
@@ -264,41 +319,179 @@
 					<td style="width: 60%;">
 						<h1>Dr. Harshit Bhadani</h1>
 						<h4>General Dentist</h4>
+						(Dental Surgeon)
+						BDS (Reg. No. A-40825), FMC, MIDA 
 						<p>Profile details come here</p>
-						<button class="book-button">Book an appointment online</button>
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-twitter"></a>
+						<a href="#" class="fa fa-google"></a>
+						<a href="#" class="fa fa-linkedin"></a>
+						<a href="#" class="fa fa-youtube"></a>
+						<a href="#" class="fa fa-instagram"></a>
+						<button class="book-button" style="padding-top: 10px; padding-top: 10px; float: right; font-size:16px;"  onclick="visit_google_form()">Book an appointment online</button>
 					</td>
 				</tr>
 			</table>
 		</div>
 		<div id="services_offered">
 			<h1>Services offered</h1>
-			<button class="book-button">Book an appointment online</button>
+			<button class="book-button" onclick="visit_google_form()">Book an appointment online</button>
 
 		</div>
 		<div id="contact_us">
 			<h1>Contact us</h1>
-			<button class="book-button">Book an appointment online</button>
+			<center>
+				<table style="width: 60%;">
+					<tr>
+						<td style="width: 20%;">
+							<i class="fa fa-hospital-o" style="font-size:40px"></i>
+						</td>
+						<td style="width: 80%;">
+							<div style="text-align: left">
+								<p style="color: teal;"><b>Address</b></p>
+								<p>
+									Dr. Harshit Bhadani, Apollo Diagnostics, GD-126,
+									<br>Sector-3, Near GD Island, Salt Lake, Kolkata-700106
+								</p>
+								<a target="_blank"; href="https://www.google.com/maps/place/Dr.+Bhadani's+Dental+Clinic/@22.5783832,88.4149944,15z/data=!4m6!3m5!1s0x3a02759d2f7d59d1:0x85963ae78fa42319!8m2!3d22.5783832!4d88.4149944!16s%2Fg%2F11krcf3vfs?entry=ttu">View on Google Map</a>
+								<p><br></p>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td style="width: 20%;">
+							<i class="fa fa-phone" style="font-size:40px"></i>
+						</td>
+						<td style="width: 80%;">
+							<div style="text-align: left">
+								<p style="color: teal;"><b>Phone numbers</b></p>
+								<p>
+									+91 7980860185 / 7890100200 / 9836115000 
+								</p>
+								<br>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td style="width: 20%;">
+							<i class="material-icons" style="font-size:40px">email</i>
+						</td>
+						<td style="width: 80%;">
+							<div style="text-align: left">
+								<p style="color: teal;"><b>Email</b></p>
+								<p>Dr.HarshitBhadani@gmail.com</p>
+								<br>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td style="width: 20%;">
+							<i class="material-icons" style="font-size:40px">sms</i>
+						</td>
+						<td style="width: 80%;">
+							<div style="text-align: left">
+								<p style="color: teal;"><b>SMS</b></p>
+								<p>
+									+91 7980860185 / 7890100200 / 9836115000
+									<br>
+								</p>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td style="width: 20%;">
+							<i class="fa fa-whatsapp" style="font-size:40px"></i>
+						</td>
+						<td style="width: 80%;">
+							<div style="text-align: left">
+								<p style="color: teal;"><b>WhatsApp</b></p>
+								<p>+91 7980860185</p>
+								<br>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<button class="book-button" onclick="visit_google_form()">Book an appointment online</button>
+			</center>
+
 
 		</div>
 		<div id="location_on_map">
 			<h1>Location on map</h1>
-			<button class="book-button">Book an appointment online</button>
+			<center>
+				<table>
+					<tr>
+						<td style="width: 50%;">
+							<div>
+								<a target="_blank"; href="https://www.google.com/maps/place/Dr.+Bhadani's+Dental+Clinic/@22.5783832,88.4149944,15z/data=!4m6!3m5!1s0x3a02759d2f7d59d1:0x85963ae78fa42319!8m2!3d22.5783832!4d88.4149944!16s%2Fg%2F11krcf3vfs?entry=ttu">
+									<img class="map_image"; src="./images/Map_Street_view.jpg" alt="View on map" style="width:600px; height:300px;">
+								</a>
+								<p>Click the picture to enlarge the location.</p>
+							</div>
+						</td>
+						<td style="width: 50%;">
+							<div style="text-align: left;">
+								<p>&nbsp;&nbsp;&nbsp;<b>Address</b></p>
+								&nbsp;&nbsp;&nbsp;Dr. Harshit Bhadani, Apollo Diagnostics, GD-126,
+								<br>&nbsp;&nbsp;&nbsp;Sector-3, Near GD Island, Salt Lake, Kolkata-700106
+								<br>&nbsp;&nbsp;&nbsp;Landmark: GD Island, Salt Lake, Kolkata-700106
+								<br>&nbsp;&nbsp;&nbsp;Phone numbers: +91 7980860185 / 7890100200 / 9836115000
+								<br>&nbsp;&nbsp;&nbsp;Email: Dr.HarshitBhadani@gmail.com
+								<br>&nbsp;&nbsp;&nbsp;WhatsApp: +91 7980860185
+								<br>
+								<br>
+							</div>
+							&nbsp;&nbsp;&nbsp;<button class="book-button" onclick="visit_google_form()">Book an appointment online</button>
+						</td>
+					</tr>
+				</table>
+			</center>
 		</div>
 		<div id="bottom_of_the_home_page" style="background-color: #CCC;">
 			<h1>content</h1>
-			<button class="book-button">Book an appointment online</button>
+			<button class="book-button" onclick="visit_google_form()">Book an appointment online</button>
 		</div>
 	</div>
 	<div id="floating_div">
 		<table>
 			<tr>
 				<td>
-					<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+					<div onclick="topFunction()" id="myBtn" title="Go to top"></div>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<button class="feedback">Feedback</button>
+					<button style='font-size:19px' class="book-button" onclick="visit_google_form()">Book</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="#" class="fa fa-facebook"></a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="#" class="fa fa-twitter"></a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="#" class="fa fa-google"></a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="#" class="fa fa-linkedin"></a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="#" class="fa fa-youtube"></a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="#" class="fa fa-instagram"></a>
 				</td>
 			</tr>
 		</table>
