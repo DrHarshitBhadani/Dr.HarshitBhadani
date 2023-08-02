@@ -27,12 +27,15 @@
 			outline: none;
 			font-size: 20px;
 			transition: 0.4s;
+			border: 1px solid #2f5bb9;
 		}
 
 		.active,
 		.accordion:hover {
 			background-color: #ccc;
 			color: black;
+			border: 1px solid #ccc;
+
 		}
 
 		.accordion:after {
@@ -98,8 +101,8 @@
 		}
 
 		#myBtn {
-			height: 55px;
-			width: 55px;
+			height: 53px;
+			width: 53px;
 			background-image:
 				url("./images/Green\ top.jpg");
 			background-repeat: no-repeat;
@@ -113,8 +116,8 @@
 		}
 
 		#myBtn:hover {
-			height: 55px;
-			width: 55px;
+			height: 53px;
+			width: 53px;
 			background-image:
 				url("./images/Gray\ top.jpg");
 			background-repeat: no-repeat;
@@ -138,6 +141,11 @@
 		td.contact_us_options {
 			animation: color-change 1s infinite;
 			animation-duration: 4s;
+		}
+
+		.contact_us_options:hover {
+			animation: none;
+			color: black;
 		}
 
 		@keyframes color-change {
@@ -180,7 +188,7 @@
 		}
 
 		h1.top-clinic-name {
-			font-size: 300%;
+			font-size: 350%;
 			color: darkblue;
 		}
 
@@ -191,6 +199,7 @@
 
 		body {
 			background: white;
+			font-size: large;
 		}
 
 		.content {
@@ -250,19 +259,21 @@
 						<tr>
 							<td>
 								<div id="name_at_the_top_of_home_page"
-									style="border: 1px solid black; margin-top: 0px; margin-bottom: 0px;">
+									style="border: 0px solid black; margin-top: 0px; margin-bottom: 0px;">
 									<center>
-										<h1 class="top-clinic-name"><b>Dr. Bhadani's Dental Clinic</b></h1>
-										<h1 style="color: indigo;">Managed by Dr. Harshit Bhadani</h1>
+										<h1 class="top-clinic-name" style="margin-top: -15px;"><b>Dr. Bhadani's Dental
+												Clinic</b></h1>
+										<h1 style="color: indigo; margin-top: -40px;">Managed by Dr. Harshit Bhadani
+										</h1>
 									</center>
 								</div>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<h3 style="margin-top: 0px; margin-bottom: 0px;">&nbsp;&nbsp;Dental clinic for kids and
-									adults. We
-									are open Monday to Sunday 09:00 AM - 09:00 PM.</h3>
+								<h3 style="margin-top: -25px; margin-bottom: 0px;">&nbsp;&nbsp;Dental clinic for kids
+									and
+									adults. We are open Monday to Sunday 09:00 AM - 09:00 PM.</h3>
 							</td>
 						</tr>
 						<tr>
@@ -272,7 +283,7 @@
 									<a href="#about_the_clinic">&nbsp;About the clinic</a>
 									<a href="#about_the_doctor">&nbsp;About the Doctor</a>
 									<a href="#services_offered">&nbsp;Services Offered</a>
-									<a href="#contact_us">&nbsp;Contact us</a>
+									<a href="#contact_us">&nbsp;Get in touch</a>
 									<a href="#location_on_map">&nbsp;Location on map</a>
 								</div>
 							</td>
@@ -298,6 +309,21 @@
 							class="scrollmenu-div">
 							<table>
 								<tr>
+									<td>
+										<div id="clinic_images_6">
+											<img src="./images/IMG-006.jpg" alt="Distilled Water." height="300">
+										</div>
+									</td>
+									<td>
+										<div id="clinic_images_7">
+											<img src="./images/IMG-007.jpg" alt="Equipment" height="300">
+										</div>
+									</td>
+									<td>
+										<div id="clinic_images_8">
+											<img src="./images/IMG-008.jpg" alt="X-Ray Machine." height="300">
+										</div>
+									</td>
 									<td>
 										<div id="clinic_images_1">
 											<img src="./images/IMG-001.jpg" alt="Your health is our priority."
@@ -325,6 +351,26 @@
 											<img src="./images/IMG-005.jpg" alt="Magical chair." height="300">
 										</div>
 									</td>
+									<td>
+										<div id="clinic_images_9">
+											<img src="./images/IMG-009.jpg" alt="Cupboard-1." height="300">
+										</div>
+									</td>
+									<td>
+										<div id="clinic_images_10">
+											<img src="./images/IMG-010.jpg" alt="Equipment" height="300">
+										</div>
+									</td>
+									<td>
+										<div id="clinic_images_11">
+											<img src="./images/IMG-011.jpg" alt="Equipment" height="300">
+										</div>
+									</td>
+									<td>
+										<div id="clinic_images_12">
+											<img src="./images/IMG-012.jpg" alt="Cupboard-2" height="300">
+										</div>
+									</td>
 								</tr>
 							</table>
 						</div>
@@ -345,11 +391,14 @@
 				</tr>
 			</table>
 			<p></p>
-			<div>
-				Located in Salt Lake sector-III, Kolkata. The clinic is well equipped with latest and sophisticated
-				equipment. Your health is our top-most priority. The premises is shared with some the the leading
-				doctors in
-				the city.
+			<div style="overflow-x: hidden; overflow-y: auto; height: 120px; max-height: 500px; text-align: justify;">
+				Located near PNB Salt Lake City Sector-III, Kolkata, the clinic is well equipped with latest and
+				sophisticated equipment which are required to provide a world-class medical treatment. The materials
+				used are of the best quality and from the best of the manufacturers operating around the globe. Your
+				health is our top-most priority. The clinic is at the ground floor, is air-conditioned, has a nice,
+				clean lobby (waiting area). There are free vehicle-parking spaces available for outside the clinic.
+				Wheelchairs are also available. The premises is shared with some of the leading Doctors from Kolkata and
+				Hyderabad. The premises also houses a Diagnostic Centre, a Pharmacy, a fitness centre, and a cafe.
 			</div>
 			<a target="_blank" href="https://www.facebook.com/profile.php?id=100095263560994"
 				class="fa fa-facebook"></a>
@@ -370,10 +419,11 @@
 				<tr>
 					<td style="width: 40%;">
 						<img id="Dr_Harshit_Bhadani_image" src="./images/Dr-Harshit-Bhadani.jpg"
-							alt="Dr. Harshit Bhadani" style="width: 100%;">
+							alt="Dr. Harshit Bhadani" style="width: 100%; height: 1000px;">
 					</td>
 					<td style="width: 60%;">
-						<div id="adjecent_to_image" style="overflow-x: hidden; overflow-y: auto; max-height: 1000px;">
+						<div id="adjecent_to_image"
+							style="overflow-x: hidden; overflow-y: auto; max-height: 1000px; text-align: justify;">
 							<h1>Dr. Harshit Bhadani</h1>
 							<h4>General Dentist</h4>
 							(Dental Surgeon)
@@ -532,7 +582,7 @@
 				</ul>
 			</div>
 
-			<div class="accordion"><b>Gum Problems and bad breath</b></div>
+			<div class="accordion"><b>Gum problems and bad breath</b></div>
 			<div class="panel">
 				<ul>
 					<li>Bleeding gums Treatment</li>
@@ -616,19 +666,25 @@
 
 			<div class="accordion"><b>Geriatric Dentistry</b></div>
 			<div class="panel">
-				<p>Dentistry for Senior Citizens.</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;Dentistry for Senior Citizens.</p>
 			</div>
 
 			<div class="accordion"><b>Corporate Dental Camps</b></div>
 			<div class="panel">
-				<p>Dental camps for working-professionals, their family and their friends.</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;Dental camps for working-professionals, their family and their friends.</p>
 			</div>
+
+			<div class="accordion"><b>Emergency Services</b></div>
+			<div class="panel">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;Treatment during any kind of emergency situation.</p>
+			</div>
+
 			<br>
 			<button class="book-button" onclick="visit_google_form()">Book an appointment online</button>
 
 		</div>
 		<div id="contact_us">
-			<h1>Contact us</h1>
+			<h1>Get in touch</h1>
 			<center>
 				<table style="width: 60%;">
 					<tr>
@@ -651,7 +707,7 @@
 					</tr>
 					<tr>
 						<td style="width: 20%;">
-							<i class="fa fa-phone" style="font-size:40px"></i>
+							<i class="fa fa-phone" style="font-size:40px; margin-left: -7px;"></i>
 						</td>
 						<td style="width: 80%;">
 							<div style="text-align: left">
@@ -691,7 +747,7 @@
 					</tr>
 					<tr>
 						<td style="width: 20%;">
-							<i class="fa fa-whatsapp" style="font-size:40px"></i>
+							<i class="fa fa-whatsapp" style="font-size:42px; margin-left: -7px;"></i>
 						</td>
 						<td style="width: 80%;">
 							<div style="text-align: left">
@@ -720,21 +776,26 @@
 										style="width:600px; height:300px;">
 								</a>
 								<center>
-									<a href="https://www.google.com/maps/place/Dr.+Bhadani's+Dental+Clinic/@22.5783832,88.4149944,15z/data=!4m6!3m5!1s0x3a02759d2f7d59d1:0x85963ae78fa42319!8m2!3d22.5783832!4d88.4149944!16s%2Fg%2F11krcf3vfs?entry=ttu">Click to enlarge the location.</a>
+									<a
+										href="https://www.google.com/maps/place/Dr.+Bhadani's+Dental+Clinic/@22.5783832,88.4149944,15z/data=!4m6!3m5!1s0x3a02759d2f7d59d1:0x85963ae78fa42319!8m2!3d22.5783832!4d88.4149944!16s%2Fg%2F11krcf3vfs?entry=ttu">Click
+										to enlarge the location.</a>
 								</center>
 								<br>
 							</div>
 						</td>
 						<td style="width: 50%;">
-							<div style="text-align: left;">
-								<p>&nbsp;&nbsp;&nbsp;<b>Address</b></p>
+							<div style="text-align: left; text-align: justify;">
+								<h3>&nbsp;&nbsp;&nbsp;<b>Address</b></h3>
 								&nbsp;&nbsp;&nbsp;Dr. Harshit Bhadani, Apollo Diagnostics, GD-126,
 								<br>&nbsp;&nbsp;&nbsp;Sector-3, Near GD Island, Salt Lake, Kolkata-700106
-								<br>&nbsp;&nbsp;&nbsp;Landmark: GD Island, Salt Lake, Kolkata-700106
-								<br>&nbsp;&nbsp;&nbsp;Phone numbers: +91 7980860185 / 7890100200 / 9836115000
-								<br>&nbsp;&nbsp;&nbsp;Email: Dr.HarshitBhadani@gmail.com
-								<br>&nbsp;&nbsp;&nbsp;WhatsApp: +91 7980860185
 								<br>
+								<br>&nbsp;&nbsp;&nbsp;Landmark: GD Island, Salt Lake, Kolkata-700106
+								<br>
+								<br>&nbsp;&nbsp;&nbsp;Phone numbers: +91 7980860185 / 7890100200 / 9836115000
+								<br>
+								<br>&nbsp;&nbsp;&nbsp;Email: Dr.HarshitBhadani@gmail.com
+								<br>
+								<br>&nbsp;&nbsp;&nbsp;WhatsApp: +91 7980860185
 								<br>
 							</div>
 							&nbsp;&nbsp;&nbsp;<button class="book-button" onclick="visit_google_form()">Book an
@@ -746,7 +807,7 @@
 		</div>
 		<div id="bottom_of_the_home_page" style="background-color: #CCC;">
 			<center>
-				<a href="#">Privacy policy</a>&nbsp;|&nbsp;<a href="#">Terms of use</a>&nbsp; 
+				<a href="#">Privacy policy</a>&nbsp;|&nbsp;<a href="#">Terms of use</a>&nbsp;
 			</center>
 			<br>
 			<center>
@@ -774,7 +835,10 @@
 			</tr>
 			<tr>
 				<td>
-					<button style='font-size:19px' class="book-button" onclick="visit_google_form()">Book</button>
+					<button style='width: 54px;' class="book-button" onclick="visit_google_form()"
+						title="Book an appointment online">
+						<i class="fa fa-calendar" style="font-size:25px; padding-right: 10px; margin-left: -5px;"></i>
+					</button>
 				</td>
 			</tr>
 			<tr>
