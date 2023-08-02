@@ -8,6 +8,48 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<style>
+		div.panel {
+			display: none;
+		}
+
+		div.panel.show {
+			display: block !important;
+		}
+
+		.accordion {
+			background-color: #3B5998;
+			color: white;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 20px;
+			transition: 0.4s;
+		}
+
+		.active,
+		.accordion:hover {
+			background-color: #ccc;
+			color: black;
+		}
+
+		.accordion:after {
+			content: '\002B';
+			color: white;
+			font-size: 25px;
+			font-weight: bold;
+			float: right;
+			margin-left: 5px;
+		}
+
+		.active:after {
+			color: black;
+			font-size: 25px;
+			content: "\2212";
+		}
+
 		img.map_image:hover {
 			content: url("./images/Map_Default_View.jpg");
 		}
@@ -74,7 +116,7 @@
 			height: 55px;
 			width: 55px;
 			background-image:
-				url("./images/Blue\ top.jpg");
+				url("./images/Gray\ top.jpg");
 			background-repeat: no-repeat;
 			background-size: contain;
 		}
@@ -179,7 +221,7 @@
 	</style>
 	<script>
 		function visit_google_form() {
-			window.open("https://forms.gle/t3aVWMjenEjzDgiD7")
+			window.open("https://forms.gle/SDN8GtpaRTmANQ359")
 		}
 	</script>
 </head>
@@ -188,7 +230,7 @@
 	<div id="main_container">
 		<table>
 			<tr>
-				<td style="width: 30%; background-color: black;">
+				<td style="width: 30%; background-color: whitesmoke;">
 					<center>
 						<div id="logo_in_the_home_page" style="width: 90%; height: 90%;">
 							<img src="./images/Dentist.jpg" alt="Logo of clinic" style="width: 100%;">
@@ -327,34 +369,261 @@
 			<table>
 				<tr>
 					<td style="width: 40%;">
-						<img src="./images/Dr-Harshit-Bhadani.jpg" alt="Dr. Harshit Bhadani" style="width: 100%;">
+						<img id="Dr_Harshit_Bhadani_image" src="./images/Dr-Harshit-Bhadani.jpg"
+							alt="Dr. Harshit Bhadani" style="width: 100%;">
 					</td>
 					<td style="width: 60%;">
-						<h1>Dr. Harshit Bhadani</h1>
-						<h4>General Dentist</h4>
-						(Dental Surgeon)
-						BDS (Reg. No. A-40825), FMC, MIDA
-						<p>Profile details come here</p>
-						<a href="https://www.facebook.com/profile.php?id=100095222130951" target="_blank"
-							class="fa fa-facebook"></a>
-						<a href="#" class="fa fa-twitter"></a>
-						<a target="_blank"
-							href="https://business.google.com/?gmbsrc=ww-ww-ot-gs-z-gmb-l-z-h~z-ogb-u&authuser=0"
-							class="fa fa-google"></a>
-						<a href="https://www.linkedin.com/in/dr-harshit-bhadani-372917284/" target="_blank"
-							class="fa fa-linkedin"></a>
-						<a href="https://www.youtube.com/channel/UC55hMyn6RGw0rPL5rng3myw" target="_blank"
-							class="fa fa-youtube"></a>
-						<a href="#" class="fa fa-instagram"></a>
-						<button class="book-button"
-							style="padding-top: 10px; padding-top: 10px; float: right; font-size:16px;"
-							onclick="visit_google_form()">Book an appointment online</button>
+						<div id="adjecent_to_image" style="overflow-x: hidden; overflow-y: auto; max-height: 1000px;">
+							<h1>Dr. Harshit Bhadani</h1>
+							<h4>General Dentist</h4>
+							(Dental Surgeon)
+							BDS (Reg. No. A-40825), FMC, MIDA
+							<p>Profile details come here</p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<center>
+							<u>Dr. Harshit Bhadani (General Dentist)</u>
+						</center>
+
+					</td>
+					<td>
+						<div>
+							<a href="https://www.facebook.com/profile.php?id=100095222130951" target="_blank"
+								class="fa fa-facebook"></a>
+							<a href="#" class="fa fa-twitter"></a>
+							<a target="_blank"
+								href="https://business.google.com/?gmbsrc=ww-ww-ot-gs-z-gmb-l-z-h~z-ogb-u&authuser=0"
+								class="fa fa-google"></a>
+							<a href="https://www.linkedin.com/in/dr-harshit-bhadani-372917284/" target="_blank"
+								class="fa fa-linkedin"></a>
+							<a href="https://www.youtube.com/channel/UC55hMyn6RGw0rPL5rng3myw" target="_blank"
+								class="fa fa-youtube"></a>
+							<a href="#" class="fa fa-instagram"></a>
+							<button class="book-button"
+								style="padding-top: 10px; padding-top: 7px; float: right; font-size:16px;"
+								onclick="visit_google_form()">Book an appointment online</button>
+						</div>
 					</td>
 				</tr>
 			</table>
 		</div>
 		<div id="services_offered">
 			<h1>Services offered</h1>
+
+			<div class="accordion active"><b>General Dentistry</b></div>
+			<div class="panel show">
+				<ul>
+					<li>Consultations</li>
+					<li>Dental check-ups and X-Ray (Radiovisiography-RVG)</li>
+					<li>Scaling, Polishing and Root Planing</li>
+					<li>Painless Dentistry</li>
+					<li>Oral Lesions Screening</li>
+					<li>Oral Cancer Screening</li>
+					<li>Temporomandibular Joint (TMJ) Screening</li>
+					<li>Tobacco Cessation Intervention</li>
+				</ul>
+			</div>
+
+			<div class="accordion"><b>Gum Problems and bad breath</b></div>
+			<div class="panel">
+				<ul>
+					<li>Bleeding gums Treatment</li>
+					<li>Bad breath (Halitosis)</li>
+				</ul>
+			</div>
+
+			<div class="accordion"><b>Dental Surgery</b></div>
+			<div class="panel">
+				<ul>
+					<li>Extractions and Impactions</li>
+					<li>Wisdom Tooth Extraction</li>
+					<li>Surgical Extraction</li>
+				</ul>
+			</div>
+
+			<div class="accordion"><b>Endodontics</b></div>
+			<div class="panel">
+				<ul>
+					<li>Root Canal Treatment (Single Sitting)</li>
+					<li>Post and Core</li>
+					<li>Inlays and Onlays</li>
+					<li>Rotary Root Canal Treatment</li>
+					<li>Re- Root Canal Treatment</li>
+				</ul>
+			</div>
+
+			<div class="accordion"><b>Orthodontics</b></div>
+			<div class="panel">
+				<ul>
+					<li>Straightening Teeth (Conventional Braces)</li>
+					<li>Invisible/ Clear Braces</li>
+					<li>Gap closing</li>
+					<li>Mouthguards (Bruxism/ Night grinding)</li>
+				</ul>
+			</div>
+
+			<div class="accordion"><b>Cosmetic/ Aesthetic Dentistry</b></div>
+			<div class="panel">
+				<ul>
+					<li>Smile Makeover</li>
+					<li>Porcelain Veneers/ Laminates</li>
+					<li>Teeth Whitening/ Bleaching (Cosmetic Whitening)</li>
+					<li>In-office Bleaching</li>
+					<li>Discoloured Tooth Restoration</li>
+				</ul>
+			</div>
+
+			<div class="accordion"><b>Conservative Dentistry</b></div>
+			<div class="panel">
+				<ul>
+					<li>Natural Tooth-Coloured Fillings</li>
+					<li>Minimally invasive Dentistry</li>
+					<li>Tooth Reshaping</li>
+					<li>Amalgam (Silver filling) Removal</li>
+				</ul>
+			</div>
+
+			<div class="accordion"><b>Prosthetics</b></div>
+			<div class="panel">
+				<ul>
+					<li>Complete and Partial Dentures</li>
+					<li>Temporary Crowns</li>
+					<li>Dental Ceramics</li>
+					<li>Artificial Teeth</li>
+					<li>Zirconia Crowns</li>
+				</ul>
+			</div>
+
+			<div class="accordion"><b>Pediatric Dentistry (Children’s Dentistry)</b></div>
+			<div class="panel">
+				<ul>
+					<li>Restorative and Endodontic Procedures</li>
+					<li>Extractions and Minor Surgical Procedures</li>
+					<li>Vital and non-vital Pulp Therapy</li>
+					<li>Pit and Fissure Sealants and Fluoride Application</li>
+					<li>Custom Athletic Mouthguards for all levels of all sports</li>
+					<li>Space Maintainers</li>
+				</ul>
+			</div>
+
+			<div class="accordion"><b>Geriatric Dentistry</b></div>
+			<div class="panel">
+				<p>Dentistry for Senior Citizens.</p>
+			</div>
+
+			<div class="accordion"><b>Corporate Dental Camps</b></div>
+			<div class="panel">
+				<p>Dental camps for working-professionals, their family and their friends.</p>
+			</div>
+			<br>
 			<button class="book-button" onclick="visit_google_form()">Book an appointment online</button>
 
 		</div>
@@ -450,7 +719,10 @@
 									<img class="map_image" ; src="./images/Map_Street_view.jpg" alt="View on map"
 										style="width:600px; height:300px;">
 								</a>
-								<p>Click the picture to enlarge the location.</p>
+								<center>
+									<a href="https://www.google.com/maps/place/Dr.+Bhadani's+Dental+Clinic/@22.5783832,88.4149944,15z/data=!4m6!3m5!1s0x3a02759d2f7d59d1:0x85963ae78fa42319!8m2!3d22.5783832!4d88.4149944!16s%2Fg%2F11krcf3vfs?entry=ttu">Click to enlarge the location.</a>
+								</center>
+								<br>
 							</div>
 						</td>
 						<td style="width: 50%;">
@@ -473,9 +745,24 @@
 			</center>
 		</div>
 		<div id="bottom_of_the_home_page" style="background-color: #CCC;">
-			<h1>content</h1>
-			<button class="book-button" onclick="visit_google_form()">Book an appointment online</button>
-			<p>&#169; 2023 by Dr. Bhadani's Dental Clinic. All Rights Reserved.</p>
+			<center>
+				<a href="#">Privacy policy</a>&nbsp;|&nbsp;<a href="#">Terms of use</a>&nbsp; 
+			</center>
+			<br>
+			<center>
+				<a target="_blank" href="https://www.facebook.com/profile.php?id=100095263560994"
+					class="fa fa-facebook"></a>
+				<a target="_blank" href="#" class="fa fa-twitter"></a>
+				<a target="_blank" href="https://g.page/r/CRkjpI_nOpaFEAI/review" class="fa fa-google"></a>
+				<a target="_blank" href="https://www.linkedin.com/company/97887507/admin/feed/posts/" target="_blank"
+					class="fa fa-linkedin"></a>
+				<a target="_blank" href="https://www.youtube.com/channel/UC55hMyn6RGw0rPL5rng3myw" target="_blank"
+					class="fa fa-youtube"></a>
+				<a target="_blank" href="#" class="fa fa-instagram"></a>
+			</center>
+			<center>
+				<p>&#169; 2023 by Dr. Bhadani's Dental Clinic. All Rights Reserved.</p>
+			</center>
 		</div>
 	</div>
 	<div id="floating_div">
@@ -544,6 +831,27 @@
 		function topFunction() {
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;
+		}
+		var acc = document.getElementsByClassName("accordion");
+		var panel = document.getElementsByClassName('panel');
+
+		for (var i = 0; i < acc.length; i++) {
+			acc[i].onclick = function () {
+				var setClasses = !this.classList.contains('active');
+				setClass(acc, 'active', 'remove');
+				setClass(panel, 'show', 'remove');
+
+				if (setClasses) {
+					this.classList.toggle("active");
+					this.nextElementSibling.classList.toggle("show");
+				}
+			}
+		}
+
+		function setClass(els, className, fnName) {
+			for (var i = 0; i < els.length; i++) {
+				els[i].classList[fnName](className);
+			}
 		}
 	</script>
 </body>
