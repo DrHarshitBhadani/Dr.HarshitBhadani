@@ -8,6 +8,26 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<style>
+		@media all and (min-device-width: 481px) {
+			.desktop {
+				display: block;
+			}
+
+			.mobile {
+				display: none;
+			}
+		}
+
+		@media all and (max-device-width: 480px) {
+			.desktop {
+				display: none;
+			}
+
+			.mobile {
+				display: block;
+			}
+		}
+
 		div.panel {
 			display: none;
 		}
@@ -225,7 +245,8 @@
 				<td style="width: 30%; background-color: whitesmoke; min-width: 220px; min-height: 220px;">
 					<center>
 						<div id="logo_in_the_home_page" style="width: 90%; height: 90%;">
-							<img src="./images/Dentist.jpg" alt="Logo of clinic" style="width: 100%; min-width: 200px; min-height: 200px;">
+							<img src="./images/Dentist.jpg" alt="Logo of clinic"
+								style="width: 100%; min-width: 200px; min-height: 200px;">
 						</div>
 					</center>
 				</td>
@@ -244,9 +265,12 @@
 								<div id="name_at_the_top_of_home_page"
 									style="border: 0px solid black; margin-top: 0px; margin-bottom: 0px;">
 									<center>
-										<h1 class="top-clinic-name" style="margin-top: -10px; font-size: 350%; color: darkblue;"><b>Dr. Bhadani's Dental
-												Clinic</b></h1>
-										<h1 style="color: indigo; margin-top: -40px;">Managed by Dr. Harshit Bhadani
+										<h1 class="top-clinic-name"
+											style="margin-top: -10px; font-size: 350%; color: darkblue;">
+											<b>Dr. Bhadani's Dental Clinic</b>
+										</h1>
+										<h1 style="color: indigo; margin-top: -40px;">
+											Managed by Dr. Harshit Bhadani
 										</h1>
 									</center>
 								</div>
@@ -254,9 +278,10 @@
 						</tr>
 						<tr>
 							<td>
-								<h3 style="margin-top: -25px; margin-bottom: 0px;">&nbsp;&nbsp;Dental clinic for kids
-									and
-									adults. We are open Monday to Sunday 09:00 AM - 09:00 PM.</h3>
+								<h3 style="margin-top: -25px; margin-bottom: 0px;">
+									&nbsp;&nbsp;Dental clinic for kids and adults. We are open Monday to Sunday 09:00 AM
+									- 09:00 PM.
+								</h3>
 							</td>
 						</tr>
 						<tr>
@@ -272,10 +297,13 @@
 							</td>
 						</tr>
 					</table>
-
 				</td>
 			</tr>
 		</table>
+
+		<div class="desktop">this is the content for desktop</div>
+		<div class="mobile">this is the content for mobile</div>
+
 		<div id="about_the_clinic">
 			<h1>About the clinic</h1>
 
@@ -362,19 +390,19 @@
 				<tr>
 					<td>
 						<center>
-							Take a tour of the clinic.
+							<u>Take a tour of the clinic.</u>
 						</center>
-
 					</td>
 					<td>
 						<center>
-							Pictures of clinic. Equiped with latest and sophisticated equipment.
+							<u>Pictures of clinic. Equiped with latest and sophisticated equipment.</u>
 						</center>
 					</td>
 				</tr>
 			</table>
 			<p></p>
-			<div style="overflow-x: hidden; overflow-y: auto; height: 120px; max-height: 500px; text-align: justify;">
+			<div
+				style="width: auto;overflow-x: hidden; overflow-y: auto; height: 120px; max-height: 500px; text-align: justify;">
 				Located near PNB Salt Lake City Sector-III, Kolkata, the clinic is well equipped with latest and
 				sophisticated equipment which are required to provide a world-class medical treatment. The materials
 				used are of the best quality and from the best of the manufacturers operating around the globe. Your
