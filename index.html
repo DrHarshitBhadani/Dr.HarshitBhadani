@@ -223,6 +223,12 @@
 			white-space: nowrap;
 			margin-top: 0px;
 		}
+		div.scrollmenu-top-div-mobile {
+			background-color: #333;
+			overflow: auto;
+			white-space: nowrap;
+			margin-top: 0px;
+		}
 
 		div.scrollmenu-top-div a {
 			display: inline-block;
@@ -239,7 +245,7 @@
 </head>
 
 <body class="content">
-	<div id="main_container">
+	<div id="main_container" class="desktop">
 		<table>
 			<tr>
 				<td style="width: 30%; background-color: whitesmoke; min-width: 220px; min-height: 220px;">
@@ -300,9 +306,6 @@
 				</td>
 			</tr>
 		</table>
-
-		<div class="desktop">this is the content for desktop</div>
-		<div class="mobile">this is the content for mobile</div>
 
 		<div id="about_the_clinic">
 			<h1>About the clinic</h1>
@@ -710,8 +713,9 @@
 									<br>Sector-3, Near GD Island, Salt Lake, Kolkata-700106
 								</p>
 								<a target="_blank" ;
-									href="https://www.google.com/maps/place/Dr.+Bhadani's+Dental+Clinic/@22.5783832,88.4149944,15z/data=!4m6!3m5!1s0x3a02759d2f7d59d1:0x85963ae78fa42319!8m2!3d22.5783832!4d88.4149944!16s%2Fg%2F11krcf3vfs?entry=ttu">View
-									on Google Map</a>
+									href="https://www.google.com/maps/place/Dr.+Bhadani's+Dental+Clinic/@22.5783832,88.4149944,15z/data=!4m6!3m5!1s0x3a02759d2f7d59d1:0x85963ae78fa42319!8m2!3d22.5783832!4d88.4149944!16s%2Fg%2F11krcf3vfs?entry=ttu">
+									View on Google Map
+								</a>
 								<p><br></p>
 							</div>
 						</td>
@@ -837,7 +841,7 @@
 			</center>
 		</div>
 	</div>
-	<div id="floating_div">
+	<div id="floating_div" class="desktop">
 		<table>
 			<tr>
 				<td>
@@ -887,6 +891,74 @@
 			</tr>
 		</table>
 	</div>
+
+	<!--Code specifically for mobile phones-->
+	<div id= "main_container_mobile" class="mobile">
+		<table>
+			<tr>
+				<td>
+					<div class="scrollmenu-top-div-mobile">
+						<a href="#main_container_mobile">&nbsp;Home</a>
+						<a href="#about_the_clinic_mobile">&nbsp;About the clinic</a>
+						<a href="#about_the_doctor_mobile">&nbsp;About the Doctor</a>
+						<a href="#services_offered_mobile">&nbsp;Services Offered</a>
+						<a href="#contact_us_mobile">&nbsp;Get in touch</a>
+						<a href="#location_on_map_mobile">&nbsp;Location on map</a>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="width: auto; background-color: whitesmoke; min-width: 220px; min-height: 220px;">
+					<center>
+						<div id="logo_in_the_home_page" style="width: 90%; height: 90%;">
+							<img src="./images/Dentist.jpg" alt="Logo of clinic"
+								style="width: 100%; min-width: 200px; min-height: 200px;">
+						</div>
+					</center>
+				</td>
+			</tr>
+			<tr>
+				<!--Clinic details at the top-->
+				<td style="width: 100%; background-color: honeydew;">
+					<table>
+						<!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_hor_scroll-->
+						<tr>
+							<td class="contact_us_options">
+								Call: 7980860185 / 7890100200 / 9836115000 or Email: Dr.HarshitBhadani@gmail.com
+								<button class="book-button" style="float: right;" onclick="visit_google_form()">Book an
+									appointment online</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div id="name_at_the_top_of_home_page"
+									style="border: 0px solid black; margin-top: 0px; margin-bottom: 0px;">
+									<center>
+										<h1 class="top-clinic-name"
+											style="margin-top: -10px; font-size: 350%; color: darkblue;">
+											<b>Dr. Bhadani's Dental Clinic</b>
+										</h1>
+										<h1 style="color: indigo; margin-top: -40px;">
+											Managed by Dr. Harshit Bhadani
+										</h1>
+									</center>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3 style="margin-top: -25px; margin-bottom: 0px;">
+									&nbsp;&nbsp;Dental clinic for kids and adults. We are open Monday to Sunday 09:00 AM
+									- 09:00 PM.
+								</h3>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+
 	<script>
 		// Get the button
 		let mybutton = document.getElementById("myBtn");
