@@ -3,7 +3,7 @@
 
 <head>
 	<Title>Dr. Bhadani's Dental Clinic</Title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Add icon library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -35,7 +35,6 @@
 			background-color: #ccc;
 			color: black;
 			border: 1px solid #ccc;
-
 		}
 
 		.accordion:after {
@@ -103,11 +102,9 @@
 		#myBtn {
 			height: 53px;
 			width: 53px;
-			background-image:
-				url("./images/Green\ top.jpg");
+			background-image: url("./images/Green\ top.jpg");
 			background-repeat: no-repeat;
 			background-size: contain;
-
 			display: none;
 			border: none;
 			outline: none;
@@ -118,8 +115,7 @@
 		#myBtn:hover {
 			height: 53px;
 			width: 53px;
-			background-image:
-				url("./images/Gray\ top.jpg");
+			background-image: url("./images/Gray\ top.jpg");
 			background-repeat: no-repeat;
 			background-size: contain;
 		}
@@ -187,22 +183,14 @@
 
 		}
 
-		h1.top-clinic-name {
-			font-size: 350%;
-			color: darkblue;
-		}
-
 		div.scrollmenu-div {
 			overflow: auto;
 			white-space: nowrap;
 		}
 
-		body {
+		.content {
 			background: white;
 			font-size: large;
-		}
-
-		.content {
 			max-width: 70%;
 			margin: auto;
 			background: white;
@@ -228,21 +216,16 @@
 			background-color: #777;
 		}
 	</style>
-	<script>
-		function visit_google_form() {
-			window.open("https://forms.gle/SDN8GtpaRTmANQ359")
-		}
-	</script>
 </head>
 
 <body class="content">
 	<div id="main_container">
 		<table>
 			<tr>
-				<td style="width: 30%; background-color: whitesmoke;">
+				<td style="width: 30%; background-color: whitesmoke; min-width: 220px; min-height: 220px;">
 					<center>
 						<div id="logo_in_the_home_page" style="width: 90%; height: 90%;">
-							<img src="./images/Dentist.jpg" alt="Logo of clinic" style="width: 100%;">
+							<img src="./images/Dentist.jpg" alt="Logo of clinic" style="width: 100%; min-width: 200px; min-height: 200px;">
 						</div>
 					</center>
 				</td>
@@ -261,7 +244,7 @@
 								<div id="name_at_the_top_of_home_page"
 									style="border: 0px solid black; margin-top: 0px; margin-bottom: 0px;">
 									<center>
-										<h1 class="top-clinic-name" style="margin-top: -15px;"><b>Dr. Bhadani's Dental
+										<h1 class="top-clinic-name" style="margin-top: -10px; font-size: 350%; color: darkblue;"><b>Dr. Bhadani's Dental
 												Clinic</b></h1>
 										<h1 style="color: indigo; margin-top: -40px;">Managed by Dr. Harshit Bhadani
 										</h1>
@@ -320,14 +303,14 @@
 										</div>
 									</td>
 									<td>
-										<div id="clinic_images_8">
-											<img src="./images/IMG-008.jpg" alt="X-Ray Machine." height="300">
-										</div>
-									</td>
-									<td>
 										<div id="clinic_images_1">
 											<img src="./images/IMG-001.jpg" alt="Your health is our priority."
 												height="300">
+										</div>
+									</td>
+									<td>
+										<div id="clinic_images_8">
+											<img src="./images/IMG-008.jpg" alt="X-Ray Machine." height="300">
 										</div>
 									</td>
 									<td>
@@ -916,6 +899,9 @@
 			for (var i = 0; i < els.length; i++) {
 				els[i].classList[fnName](className);
 			}
+		}
+		function visit_google_form() {
+			window.open("https://forms.gle/SDN8GtpaRTmANQ359")
 		}
 	</script>
 </body>
